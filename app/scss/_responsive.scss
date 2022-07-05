@@ -1,0 +1,48 @@
+// Responsive Header
+// 1500px
+@media (max-width: 150rem) {
+    html {
+        font-size: 56.5%;
+    }
+    .container {
+        max-width: 120rem;
+    }
+}
+// 1100px
+@media (max-width: 100rem) {
+    html {
+        font-size: 52.5%;
+    }
+
+}
+// 950px
+@media (max-width: 95rem) {
+    html {
+        font-size: 50%;
+    }
+    .container {
+        max-width: 95rem;
+    }
+}
+// 800px
+@media (max-width: 80rem) {
+    html {
+        font-size: 45%;
+    }
+    .top__navbar__main__container {
+        display: block;
+    }
+
+    .main__navbar__container {
+        .inner__main__navbar__container {
+            .navbar__link {
+                .btn__area {
+                    a {
+                        padding: 1.5rem 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+

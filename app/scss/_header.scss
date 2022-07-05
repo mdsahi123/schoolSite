@@ -1,0 +1,134 @@
+// Top Bar Design 
+.top__navbar__main__container {
+    background: $background;
+    .top__navbar__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 0;
+        .navbar__contact {
+            li {
+                color: $white;
+                font-size: 1.5rem;
+                margin-right: 1.2rem;
+                span {
+                    color: $whiteDark;
+                    margin-left: 1rem;
+                    font-size: 1.5rem;
+                    text-transform: uppercase;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: normal;
+                }
+            }
+        }
+        ul {
+            display: flex;
+            li {
+                color: $white;
+                .navbar__icon{
+                    // color: $white;
+                    span {
+                        color: $white;
+                    }
+                }
+            a {
+                color: $white;
+                font-size: 1.5rem;
+                }
+            }
+        }
+        .navbar__icon ul li {
+            margin-right: 2.2rem;
+            &:last-child {
+                margin-right: 0;
+            }
+            & a {
+                position: relative;
+                display: block;
+                width: 30px;
+                height: 30px;
+                background: $white;
+                color: $headingDark;
+                text-align: center;
+                padding-top: 0.85rem;
+                border-radius: 50%;
+                &:hover {
+                    color: $background;
+                    background: $white;
+                }
+            }
+        }
+    }
+}
+
+// Main navbar style
+.main__navbar__container {
+    padding: 3rem 0;
+    .inner__main__navbar__container {
+        display: flex;
+        justify-content: space-between;
+
+        .navbar__logo {
+            width: 30rem;
+            a {
+                span {
+                    margin-right: -0.3rem;
+                    font-size: 3.6rem;
+                    &:first-child {
+                        color: $lightBlue;
+                    }
+                    &:nth-child(2) {
+                        color: $btnSecondary;
+                    }
+                    &:nth-child(3) {
+                        color: $yellow;
+                    }
+                    &:last-child {
+                        color: $btnPrimary;
+                    }
+                }
+            }
+        }
+
+        .navbar__link {
+            display: flex;
+            align-items: center;
+            ul {
+                display: flex;
+                li {
+                    margin-right: 4rem;
+                    position: relative;
+                    a {
+                        color: $darkBlue;
+                        font-size: 2rem;
+                        text-transform: capitalize;
+                        &:active,&:hover {
+                            color: $background;
+                        }
+                        &:hover::after{
+                            width: 100%;
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+                    & ::after {
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        background: $background;
+                        width: 0%;
+                        height: 0.3rem;
+                    }
+                }
+     
+            }
+            & .btn__area a {
+                @include primaryBtn;
+                &:hover {
+                background: $btnSecondary;
+                border: 0.1rem solid $btnSecondary;
+                }
+            }
+        }
+    }
+}
+// Header CSS Style End

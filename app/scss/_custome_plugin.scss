@@ -1,0 +1,62 @@
+// Slick
+
+.slicknav_menu {
+    display: none;
+}
+// 700px
+@media (max-width: 50rem) {
+    .top__navbar__main__container {
+        display: none;
+        position: absolute;
+    }
+    .slicknav_menu {
+        display: block;
+        background: $headingDark;
+        padding: 1.5rem;
+    }
+    .main__navbar__container {
+        .inner__main__navbar__container {
+            .navbar__link {
+                display: none;
+            }
+        }
+    }
+    .slicknav_menu .slicknav_menutxt {
+        display: none;
+    }
+    .slicknav_menu .slicknav_icon {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-88%,-9%);
+    }
+    .slicknav_btn {
+        background-color: $background;
+        
+        position: relative;
+    }
+    .slicknav_nav, .slicknav_nav ul {
+        text-align: center;
+        padding: 2rem 0;
+        & li {
+            padding: 1rem 0;
+            & a {
+                font-size: 1.6rem;
+                text-transform: capitalize;
+            }
+        }
+    }
+    .navbar__logo {
+        position: absolute;
+        top: 2rem;
+        left: 1.5rem;
+    }
+    .slicknav_nav a:hover {
+        background: none;
+        color: $white;
+    }
+    // .main__navbar__container  {
+    //     position: absolute;
+    //     top: 0;
+    // }
+}

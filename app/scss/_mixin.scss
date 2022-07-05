@@ -1,0 +1,22 @@
+// Primary Btn
+@mixin primaryBtn {
+    color: $white;
+    padding: 1.5rem 3.6rem;
+    border: 0.1rem solid $btnPrimary;
+    background: $btnPrimary;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    border-radius: 3.5rem;
+    display: inline-block;
+}
+
+@mixin secondaryBtn {
+    color: $white;
+    padding: 1.5rem 3.6rem;
+    border: 0.1rem solid $background;
+    background: $background;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    border-radius: 3.5rem;
+    display: inline-block;
+}
